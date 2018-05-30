@@ -76,27 +76,6 @@ function moveForward(rover){
   }
 }
 
-function commands(move) {
-  for(var i=0; i<move.length; i++) {
-    if(move[i]==="f") {
-      moveForward(rover);
-    }
-    else if(move[i]==="r") {
-      turnRight(rover);
-    }
-    else if(move[i]==="l") {
-      turnLeft(rover);
-    }
-    else if(move[i]==="b") {
-      moveBackward(rover);
-    }
-    else {
-      console.log("Invalid command!");
-    }
-  }
-  console.log(rover.travelLog);  
-}
-
 
 function moveBackward(rover){
   console.log("moveBackward was called")
@@ -122,3 +101,24 @@ function moveBackward(rover){
   }
 }
 
+
+function commands(move) {
+  for(var i=0; i<move.length; i++) {
+    if(move[i]==="f") {
+      moveForward(rover);
+    }
+    else if(move[i]==="r") {
+      turnRight(rover);
+    }
+    else if(move[i]==="l") {
+      turnLeft(rover);
+    }
+    else if(move[i]==="b") {
+      moveBackward(rover);
+    }
+    else {
+      console.log("Invalid command!");
+    }
+  }
+  console.log(rover.travelLog);  
+}
