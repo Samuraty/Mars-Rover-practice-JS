@@ -360,6 +360,3 @@ function commands(rover, move) {
 
 
 
-commands(rover1, "rfffffrffffff");
-commands(rover2, "ffflffff");
-commands(rover1,"lfffbbbbb");
